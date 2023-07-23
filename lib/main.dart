@@ -4,6 +4,7 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'medium_native_ads_widget.dart';
 import 'native_ads_widget.dart';
 import 'small_native_ads_widget.dart';
+import 'square_native_ads_widget.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -52,6 +53,12 @@ class MyHomePageState extends State<MyHomePage> {
           children: [
             Row(
               children: [
+                // Expanded(
+                //   child: NativeAdsWidget(),
+                // ),
+                // Expanded(
+                //   child: NativeAdsWidget(),
+                // ),
                 NativeAdsWidget(),
               ],
             ),
@@ -63,6 +70,16 @@ class MyHomePageState extends State<MyHomePage> {
             Row(
               children: const [
                 MediumNativeAdsWidget(),
+              ],
+            ),
+            Row(
+              children: const [
+                Expanded(
+                  child: SquareNativeAdsWidget(),
+                ),
+                Expanded(
+                  child: SquareNativeAdsWidget(),
+                ),
               ],
             ),
           ],
